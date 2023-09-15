@@ -52,16 +52,7 @@ body{
     font-weight: 600;
     }
 
-.nav_logo img {
-    padding: 7px
-    margin-right: 10px;
-    width: 69px;
-    height: 65px;
-    flex-shrink: 0;
-    align-items: center;
-}
-
-.terraceofdream {
+    .terraceofdream {
     padding: 15px 10px;
     display: flex;
     width: 207px;
