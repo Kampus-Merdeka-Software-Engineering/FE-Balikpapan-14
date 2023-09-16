@@ -22,7 +22,7 @@ body{
     width: 100%;
     height: 80px;
     flex-shrink: 0;
-    background-color: #ffffff;
+    background-color: #ff0000;
     border-radius: 150px;
     display: flex;
     justify-content: space-between;
