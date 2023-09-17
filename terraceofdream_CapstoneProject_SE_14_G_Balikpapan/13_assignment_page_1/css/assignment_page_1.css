@@ -14,19 +14,16 @@ body{
 }
 /* End Body */
 
-/* Navbar */
-.nav{
-    position: sticky;
-    margin: 0px;
+/* navbar */
+nav{
     padding: 0px 120px;
     width: 100%;
     height: 80px;
-    flex-shrink: 0;
-    background-color: #ffffff;
-    border-radius: 150px;
+    background-color: #FFF;
+    border-radius: 0px;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     position: fixed;
     color: #698269;
     text-align: center;
@@ -34,90 +31,59 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-	display: flex;
-	top: 0;
 }
 
-.nav_logo {
-    padding: 7px 120px;
-	color: white;
+.nav-left{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 69px;
-    height: 65px;
-    flex-shrink: 0;
-    font-size: 24px;
-    font-weight: 600;
-    }
+    align-items: center;
+}
 
-    .terraceofdream {
-    padding: 15px 10px;
+.maskot{
     display: flex;
+}
+
+.maskot img{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.logo{
     width: 207px;
     height: 40px;
-    color: #698269;
     font-size: 24px;
+    font-style: normal;
     font-weight: 700;
-    align-content: center;
+    line-height: normal;
 }
 
-.nav_menu {
-    padding-top: 20px;
+.wrap-menu{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.menu1{
-    padding: 0px 16px;
-    color: #000;
     text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color: #000;
 }
 
-.menu2{
+.menu1, .menu2, .menu3{
     margin: 0px 16px;
-    color: #000;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.menu3{
-    margin: 0px 16px;
-    color: #000;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .menu4{
     margin: 0px 16px;
     color: #698269;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
-.nav_right {
-    padding-top: 7px;
+.nav_right{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.nav_btn_logout button {
+.nav_logout button {
     margin: 0px 16px;
     width: 160px;
     height: 40px;
@@ -126,46 +92,69 @@ body{
     border: none;
     color: #FFF;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
 }
 
-.nav_profile {
+.nav_profile{
+    display: flex;
+}
+
+.nav_profile img{
     width: 40px;
     height: 40px;
+    align-items: center;
 }
 
-/* media navbar */
-@media (max-width: 757px) {
-    .menu4{
-        display: none;
-    }
-
-    .nav_btn_logout{
-        display: none;
-    }
-
-    .nav_profile{
-        margin: 0px 16px;
-    }
-}
-/* end media navbar */
+/* dropdown */
+.dropbtn {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 40px 0px;
+    background: #FFF;
+  }
+  
+  .dropdown-content a {
+    padding: 20px 40px;
+    text-decoration: none;
+    display: block;
+    color: #000;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .dropdown-content a:hover {background-color: #698269; border-radius: 40px 0px; color: #F1DBBF;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #ffffff;}
+/* end dropdown */
 /* end navbar */
-
-
 
 /* Main Section */
 .leaderboard {
-    margin: 153px 120px;
+    padding: 120px;
     flex-direction: column;
-    width: 1200px;
-    height: 420px;
-    flex-shrink: 0;
-    border-radius: 40px 0px;
     align-content: center;
-    border: 1px solid black;  
     background: #FFF;
 }
 
@@ -187,38 +176,31 @@ body{
     line-height: normal;
     text-align: center;
     color: #698269;
+    margin-bottom: 20px;
 }
 
-.table_container {
-  flex-wrap: wrap;  
-  justify-content: center;
-  align-content: center;
+.table_container { 
+  border-radius: 40px 0px;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 40px;
 }
 
 table {
-    padding: 20px 40px;
-	display: inline-block;
 	border-collapse: collapse;
-	height: 100px;
-	width: 100%;
-	margin-top: 50px;
 }
 
 .tabel tr, .tabel th, .tabel td{
-	margin-top: 50px;
-    padding-right: 110px;
     border: 1px solid black;
 	padding: 8px;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
     width: 1120px;
-
 }
 
 .table_txt{
     color: #698269;
-    font-family: Poppins;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -228,7 +210,6 @@ table {
 .tabel_line {
     color: #000;
     text-align: center;
-    font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -240,17 +221,17 @@ table {
 }
 /* End Main section */
 
-
-
 /* bottom section */
 .footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 40px 120px;
+    padding: 40px 120px 20px 120px;
     background: #FFF;
     box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
 }
 
 .bottom-information{
@@ -261,11 +242,51 @@ table {
     margin-bottom: 20px;
 }
 
-.bottom-information p{
+.bottom-head{
     margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.call{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.call img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.loc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.loc img{
+    width: 25px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.socmed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.socmed img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 .bottom-copyright{
-    text-align: center;
+    font-size: 16px;
 }
 /* end bottom section */
