@@ -7,65 +7,75 @@
 }
 /* end universal */
 
-
 /* body */
 body{
-  width: 1440px;
-  height: 1024px;
+  width: 100%;
+  overflow-x: hidden;
 }
 /* end body */
 
 /* main section */
 .main-section{
-  margin-top: 167px;
-  margin-left: 135px;
-  width: 1200px;
-  height: 668px;
-  background-color: var(--glade-green);
+  margin: 200px 440px;
   border-radius: 40px 0px 40px 0px;
-  position: absolute;
-  align-items:center;
-  box-shadow: 0px 0px 20px#698269;
-}
-
-.register-img{
-  background-color: var(#FFF);
-  border-radius: 40px 0px;
-  width: 40%;
-  height: 668px;
-  float: left;
-  padding-top: 180px;
-  padding-left: 83px;
-}
-
-.main-form{
-  border-radius: 40px 0px;
   background: #698269;
-  padding: 48px 138px;
-  float: right;
-  width: 60%;
-  height: 668px;
+  box-shadow: 0px 0px 20px 0px rgba(105, 130, 105, 0.50);
+  display: flex;
+  flex-direction: row;
+  min-width: 1200px;
 }
-.main-form h1{
-  color: #FFF;
+
+.register-left{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-family: Poppins;
-  font-size: 40px;
+  padding: 80px;
+  border-radius: 40px 0px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+.register-txt{
+  margin-bottom: 20px;
+  color: #698269;
+  text-align: center;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
+.register-img img{
+  width: 280px;
+  height: 300px;
+}
+
+.main-form{
+  width: 70%;
+  padding: 80px 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form h1{
+  color: #FFF;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
 .form-bottom{
-  margin-bottom: 10px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
-  
+  padding: 0px 160px;
 }
 
 label{
-  height: 30px;
-  padding-top: 20px;
   text-align: center;
   color: #FFF;
   font-size: 20px;
@@ -75,6 +85,7 @@ label{
 }
 
 input[type=text], [type=email], [type=password]{
+  min-width: 400px;
   height: 40px;
   display: inline-block;
   border: none;
@@ -89,17 +100,15 @@ input[type=text], [type=email], [type=password]{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
 }
 
 .button-form p{
   color: #FFF;
-  font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 .button-form button{
@@ -116,7 +125,6 @@ input[type=text], [type=email], [type=password]{
   display: inline-block;
   border: none;
   box-sizing: border-box;
-  margin-bottom: 40px;
 }
 
 /* end main section */
@@ -130,6 +138,109 @@ input[type=text], [type=email], [type=password]{
   font-weight: 400;
   line-height: normal;
   text-align: center;
-  margin-top: 800px;
+  margin-bottom: 40px;
 }
 /* end bottom section */
+
+/* media */
+@media (max-width: 991px) {
+    .main-section{
+      margin: 8rem 4rem;
+      flex-direction: column;
+      min-width: auto;
+    }
+
+    .register-left{
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .register-txt{
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    .main-form{
+      width: 100%;
+    }
+
+    .form-bottom{
+      margin-bottom: 20px;
+      padding: 0px 20px;
+    }
+
+    label{
+      text-align: center;
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 8px;
+    }
+
+    input[type=text], [type=email], [type=password]{
+        margin: 0px;
+        min-width: auto;
+    }
+
+    .button-form{
+      margin-top: 24px;
+    }
+
+    .button-form button{
+      width: 200px;
+    }
+
+    .bottom-copyright{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 414px) {
+  .main-section{
+    margin: 8rem 2rem;
+    flex-direction: column;
+  }
+
+  .register-left{
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .register-txt{
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .register-img img{
+    width: 200px;
+    height: 220px;
+  }
+  
+  .main-form{
+    width: 100%;
+    padding: 40px 12px;
+  }
+
+  .main-form h1{
+    font-size: 24px;
+  }
+
+  .form-bottom{
+    margin-bottom: 12px;
+  }
+
+  label{
+    font-size: 16px;
+  }
+
+  input[type=text], [type=email]{
+      margin: 0px;
+  }
+
+  .footer{
+    font-size: 12px;
+  }
+}
+/* end media */
