@@ -4,94 +4,165 @@
     --fontcolor: #000;
   }
   
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    border: none;
-  }
+/* universal */
+*{
+  font-family: "poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* end universal */
+
+/* body */
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+/* end body */
   
-  body {
-    font-family: "poppins", sans-serif;
-    width: 1440px;
-  }
-  
-  .navbar {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    padding: 0 70px 0 120px;
-  }
-  
-  .navbar .navLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navbar .navLogo a {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--color1);
-    margin-right: 10px;
-  }
-  
-  .navbar .navLogo img {
-    width: fit-content;
-    height: 65px;
-  }
-  
-  .navbar .navMenu a {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 10px;
-    color: #000;
-  }
-  
-  .navbar .navMenu .menuQuiz {
-    color: var(--color1);
-  }
-  
-  .navbar .navMenu a:hover {
-    color: var(--color1);
-  }
-  
-  .navbar .navUser {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navUser .profilUser {
-    margin-right: 20px;
-    width: 160px;
-    height: 40px;
-    background-color: var(--color1);
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 40px;
-  }
-  
-  .navUser .profilImg {
-    width: 40px;
-    height: 40px;
-  }
+/* navbar */
+nav{
+  padding: 0px 120px;
+  width: 100%;
+  height: 80px;
+  background-color: #FFF;
+  border-radius: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  color: #698269;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nav-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.maskot{
+  display: flex;
+}
+
+.maskot img{
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+.logo{
+  width: 207px;
+  height: 40px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wrap-menu{
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+
+.menu1, .menu2, .menu3{
+  margin: 0px 16px;
+}
+
+.menu4{
+  margin: 0px 16px;
+  color: #698269;
+}
+
+.nav_right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav_logout button {
+  margin: 0px 16px;
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  background: #698269;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nav_profile{
+  display: flex;
+}
+
+.nav_profile img{
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
+/* dropdown */
+.dropbtn {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 40px 0px;
+  background: #FFF;
+}
+
+.dropdown-content a {
+  padding: 20px 40px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dropdown-content a:hover {background-color: #698269; border-radius: 40px 0px; color: #F1DBBF;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #ffffff;}
+/* end dropdown */
+/* end navbar */
+.flex{
+  display: flex;
+  flex-direction: row;
+}
   
   .sidebar {
-    width: 480px;
-    min-height: 100vh;
     background-color: var(--color1);
-    border-radius: 0 40px;
-    padding: 70px 0 0 120px;
-    position: absolute;
-    left: 0;
+    padding: 120px 0px 0px 0px;
   }
   
   .sidebar .sidebarList {
@@ -104,8 +175,11 @@
   .sidebar .listClass {
     display: flex;
     flex-direction: column;
-    font-size: 24px;
-    font-weight: 400;
+    color: #000;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
   }
   
   .sidebar .listClass a {
@@ -119,18 +193,17 @@
   .sidebar .listClass a:hover {
     background-color: #fff;
     color: #698269;
-    border-radius: 12px;
+    border-radius: 40px 0px 40px 0px;
   }
   
   .sidebar .listClass .ipsClass {
     background-color: #fff;
     color: #698269;
-    border-radius: 12px;
+    border-radius: 40px 0px 40px 0px;
+    padding-left: 120px;
   }
   
   .mainSection {
-    margin-left: 480px;
-    /* position: absolute; */
     padding: 70px;
     box-sizing: border-box;
   }
@@ -213,3 +286,73 @@
     display: flex;
     flex-direction: row;
   }
+
+  /* bottom section */
+.footer{
+  padding: 40px 120px 20px 120px;
+  background: #FFF;
+  box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.bottom-information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bottom-head{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.call{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.call img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.loc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.loc img{
+  width: 25px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.socmed{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socmed img{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.bottom-copyright{
+  font-size: 16px;
+}
+/* end bottom section */
