@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>terraceofdream. | Assignment</title>
+    <title>terraceofdearm. | Assignment Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -16,8 +16,13 @@
 <body>
     <!--navigation bar-->
     <nav data-aos="fade-down">
-        <div class="logo">
-            terraceofdearm.
+        <div class="nav-left">
+            <div class="maskot">
+                <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/maskot.png"></img>
+            </div>
+            <div class="logo">
+                terraceofdream.
+            </div>
         </div>
         <div class="wrap-menu">
             <div class="menu1">Home</div>
@@ -30,8 +35,21 @@
                 <button>Logout</button>
             </div>
             <div class="nav_profile">
-                <img src="/img/profile.jpg" alt="your profile">
+                <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/profile.jpg" alt="your profile">
             </div>
+            <!-- dropdown -->
+              <div class="dropdown" style="float:right;">
+                <button class="dropbtn"><img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/menu.jpg" alt="dropdown"></button>
+                <div class="dropdown-content">
+                  <a href="#">Home</a>
+                  <a href="#">Lessons</a>
+                  <a href="#">Quiz</a>
+                  <a href="#">Assignment</a>
+                  <a href="#">Profile</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+              <!-- end dropdown -->
         </div>
     </nav>
     <!--end navigation bar-->
@@ -40,29 +58,29 @@
     <div class="main-section">
         <div class="main-form">
             <form class="form">
-                <div class="form-bottom">
-                    <label for="">Assignment</label><br>
-                    <input type="text" name="message" id="message" required>
-                </div>
-
-                <div class="form-bottom">
-                    <label for="">Deadline</label><br>
-                    <input type="text" name="message" id="message" required>
-                </div>
-
-                <div class="form-bottom">
+                <div class="form-content">
                     <label for="">Question</label><br>
-                    <input type="text" name="message" id="message" required>
+                    <input type="text" name="message" id="message" placeholder="Here is the Question" required>
                 </div>
 
-                <div class="form-bottom">
-                    <label for="">Answer</label><br>
-                    <input type="text" name="message" id="message" required>
+                <div class="form-content">
+                    <label for="">Deadline</label><br>
+                    <input type="text" name="message" id="message" placeholder="Due Date Day/Month/Year" required>
                 </div>
 
-                <div class="form-bottom">
+                <div class="form-content">
+                    <label for="">Subject</label><br>
+                    <input type="text" name="message" id="message" placeholder="e.g. Subject_Name_Class" required>
+                </div>
+
+                <div class="form-content">
+                    <label for="">Message</label><br>
+                    <input type="text" name="message" id="message" placeholder="e.g. This is Short Message" required>
+                </div>
+
+                <div class="form-content">
                     <label for="">Link File</label><br>
-                    <input type="text" name="message" id="message" required>
+                    <input type="text" name="message" id="message" placeholder="e.g. https://drive.google.com/example" required>
                 </div>
             
                 <div class="radio-button">
@@ -93,15 +111,25 @@
     <div class="footer">
         <div class="bottom-information">
             <div class="bottom-left">
-                <p><b>Contact</b></p>
-                <p>(021) 141 4141</p>
+                <div class="bottom-head">Contact</div>
+                <div class="call">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/call.png" alt="call">
+                    <p>(021) 141 4141</p>
+                </div>
             </div>
             <div class="bottom-center">
-                <p><b>Location</b></p>
-                <p>Lisa Street No.14 Seoul, Japan</p>
+                <div class="bottom-head">Location</div>
+                <div class="loc">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/loc.png"></img>
+                    <p>Terrace Street No.14 Seoul, Korea</p>
+                </div>
             </div>
             <div class="bottom-right">
-                <p><b>Folow Us</b></p>
+                <div class="bottom-head">Folow Us</div>
+                <div class="socmed">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/ig.png" alt="instagram">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/yt.png" alt="youtube">
+                </div>
             </div>
         </div>
 
