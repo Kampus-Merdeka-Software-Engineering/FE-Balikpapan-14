@@ -188,6 +188,7 @@ nav{
 
 table {
 	border-collapse: collapse;
+    border-radius: 40px 0px 40px 0px;
 }
 
 .tabel tr, .tabel th, .tabel td{
