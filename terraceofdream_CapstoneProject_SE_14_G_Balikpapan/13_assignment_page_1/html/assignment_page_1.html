@@ -7,32 +7,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/assignment_page_1.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="nav">
-        <div class="nav_logo">
-            <a href="https://imgur.com/sMYHLPD"><img src="https://i.imgur.com/sMYHLPD.png" title="source: imgur.com" style=" width: 69px; height: 65px;"></a>
-            <div class="terraceofdream">terraceofdream</div>
-         </div>
-        <div class="nav_menu">
-            <div class="menu1">Home</div>
-            <div class="menu2">Lessons</div>
-            <div class="menu3">Quiz</div>
-            <div class="menu4">Assignment</div>
+   <!--navigation bar-->
+   <nav>
+    <div class="nav-left">
+        <div class="maskot">
+            <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/maskot.png"></img>
         </div>
-        <div class= "nav_right">
-            <div class="nav_btn_logout">
-                <button type="submit">Logout</button>
-            </div>
-            <div class="nav_profile">
-                <a href="https://imgur.com/JzHO1y1"><img src="https://i.imgur.com/JzHO1y1.jpg" title="source: imgur.com" /></a>
-            </div>
+        <div class="logo">
+            terraceofdream.
         </div>
     </div>
-    <!-- End Navigation Bar -->
+    <div class="wrap-menu">
+        <div class="menu1">Home</div>
+        <div class="menu2">Lessons</div>
+        <div class="menu3">Quiz</div>
+        <div class="menu4">Assignment</div>
+    </div>
+    <div class="nav_right">
+        <div class="nav_logout">
+            <button>Logout</button>
+        </div>
+        <div class="nav_profile">
+            <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/profile.jpg" alt="your profile">
+        </div>
+        <!-- dropdown -->
+          <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/menu.jpg" alt="dropdown"></button>
+            <div class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">Lessons</a>
+              <a href="#">Quiz</a>
+              <a href="#">Assignment</a>
+              <a href="#">Profile</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+          <!-- end dropdown -->
+    </div>
+</nav>
+<!--end navigation bar-->
 
     <!-- Main Section -->
     <div class="leaderboard">
@@ -57,7 +73,8 @@
                     <td>Monday, 14 December 2023</td>
                     <td>14-01-23 14.15</td>
                     <td>100</td>
-                </tr class="table_line">
+                </tr>
+                <tr class="table_line">
                     <td>Tumbuhan</td>
                     <td>Monday, 14 December 2023</td>
                     <td>14-01-23 14.14</td>
@@ -75,15 +92,25 @@
     <div class="footer">
         <div class="bottom-information">
             <div class="bottom-left">
-                <p><b>Contact</b></p>
-                <p>(021) 141 4141</p>
+                <div class="bottom-head">Contact</div>
+                <div class="call">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/call.png" alt="call">
+                    <p>(021) 141 4141</p>
+                </div>
             </div>
             <div class="bottom-center">
-                <p><b>Location</b></p>
-                <p>Lisa Street No.14 Seoul, Japan</p>
+                <div class="bottom-head">Location</div>
+                <div class="loc">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/loc.png"></img>
+                    <p>Terrace Street No.14 Seoul, Korea</p>
+                </div>
             </div>
             <div class="bottom-right">
-                <p><b>Folow Us</b></p>
+                <div class="bottom-head">Folow Us</div>
+                <div class="socmed">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/ig.png" alt="instagram">
+                    <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/yt.png" alt="youtube">
+                </div>
             </div>
         </div>
 
