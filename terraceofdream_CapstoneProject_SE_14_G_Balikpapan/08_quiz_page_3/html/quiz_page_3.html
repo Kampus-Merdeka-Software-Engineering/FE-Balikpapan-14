@@ -3,83 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>terraceofdream. | Quiz 3</title>
+    <title>terraceofdream. | Quiz 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/quiz_page_3.css" />
   </head>
+
   <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="navLogo">
-        <a href="">  
-        <img src="../../img/maskot.png" alt="" />
-        </a>
-        <a href="">terraceofdream.</a>
+    <!--navigation bar-->
+    <nav data-aos="fade-down">
+      <div class="nav-left">
+          <div class="maskot">
+              <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/maskot.png"></img>
+          </div>
+          <div class="logo">
+              terraceofdream.
+          </div>
       </div>
-      <div class="navMenu">
-        <a href="" class="menuHome">Home</a>
-        <a href="" class="menuLesson">Lesson</a>
-        <a href="" class="menuQuiz">Quiz</a>
-        <a href="" class="menuAssignment">Assignment</a>
+      <div class="wrap-menu">
+          <div class="menu1">Home</div>
+          <div class="menu2">Lessons</div>
+          <div class="menu3">Quiz</div>
+          <div class="menu4">Assignment</div>
       </div>
-      <div class="navUser">
-        <a href="" class="profilUser">Logout</a>
-        <a href="">
-          <img src="../../img/profile.jpg" alt="" class="profilImg" />
-        </a>
+      <div class="nav_right">
+          <div class="nav_logout">
+              <button>Logout</button>
+          </div>
+          <div class="nav_profile">
+              <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/profile.jpg" alt="your profile">
+          </div>
+          <!-- dropdown -->
+            <div class="dropdown" style="float:right;">
+              <button class="dropbtn"><img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/menu.jpg" alt="dropdown"></button>
+              <div class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">Lessons</a>
+                <a href="#">Quiz</a>
+                <a href="#">Assignment</a>
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+            <!-- end dropdown -->
       </div>
-    </nav>
+  </nav>
+  <!--end navigation bar-->
+    <div class="flex">
     <div class="sidebar">
       <div class="sidebarList">
         <p class="mySource">My Sources</p>
       </div>
       <div class="listClass">
-        <a href="" class="ipsClass">IPS</a>
-        <a href="" class="ipaClass">IPA</a>
-        <a href="" class="mtkClass">Matematika</a>
-        <a href="" class="bidnClass">Bahasa Indonesia</a>
-        <a href="" class="bingClass">Bahasa Inggris</a>
+        <a href="" class="ipsClass">Social</a>
+        <a href="" class="ipaClass">Science</a>
+        <a href="" class="mtkClass">Math</a>
+        <a href="" class="bidnClass">Indonesia</a>
+        <a href="" class="bingClass">English</a>
         <a href="" class="pknClass">PPKN</a>
        </div>
     </div>
     <div class="mainSection">
-      <p class="pSoal">Soal IPS</p>
+      <p class="pSoal-h1">Practice Make Perfect</p>
+      <p class="pSoal">Quiz</p>
       <div class="containerQuiz">
         <form action="">
           <div class="quizSoal">
-            <label for="quizForm">Soal:</label>
-            <input type="text" name="quizForm" id="quizForm">
+            <label for="quizForm">Question</label>
+            <input type="text" name="quizForm" id="quizForm" placeholder="This is a Question">
           </div>
           <div class="formQuiz">
-            <p>Answer:</p>
+            <p>Answer</p>
             <div class="rightLeft">
-              <label for="answerA">A.</label>
-              <input type="text" name="answerA" id="answerA"><br>
+              <input type="text" name="answerA" id="answerA" placeholder="Option A"><br>
             </div>
             <div class="rightLeft">
-              <label for="answerB">B.</label>
-              <input type="text" name="answerB" id="answerB"><br>
+              <input type="text" name="answerB" id="answerB" placeholder="Option B"><br>
               </div>
             <div class="rightLeft">
-              <label for="answerC">C.</label>
-              <input type="text" name="answerC" id="answerC"><br>
+              <input type="text" name="answerC" id="answerC" placeholder="Option C"><br>
             </div>
             <div class="rightLeft">
-              <label for="answerD">D.</label>
-              <input type="text" name="answerD" id="answerD"><br>
+              <input type="text" name="answerD" id="answerD" placeholder="Option D"><br>
              </div>
           </div>
         </form>
       </div>
       <div class="newQuiz">
-        <a href="">New</a>
+        <button>Finish</button>
       </div>
     </div>
+  </div>
   </body>
+
+  <footer>
+    <!--bottom section-->
+    <div class="footer">
+      <div class="bottom-information">
+          <div class="bottom-left">
+              <div class="bottom-head">Contact</div>
+              <div class="call">
+                  <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/call.png" alt="call">
+                  <p>(021) 141 4141</p>
+              </div>
+          </div>
+          <div class="bottom-center">
+              <div class="bottom-head">Location</div>
+              <div class="loc">
+                  <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/loc.png"></img>
+                  <p>Terrace Street No.14 Seoul, Korea</p>
+              </div>
+          </div>
+          <div class="bottom-right">
+              <div class="bottom-head">Folow Us</div>
+              <div class="socmed">
+                  <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/ig.png" alt="instagram">
+                  <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/yt.png" alt="youtube">
+              </div>
+          </div>
+      </div>
+
+      <div class="bottom-copyright">
+          <p>© 2023 terraceofdream. | All Rights Reserved | Created by 💖</p>
+      </div>
+  </div>
+  <!--end bottom section-->
+    </footer>
 </html>
