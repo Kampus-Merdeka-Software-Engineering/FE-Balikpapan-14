@@ -18,6 +18,10 @@ body{
   width: 100%;
   overflow-x: hidden;
 }
+
+a{
+  text-decoration: none;
+}
 /* end body */
   
 /* navbar */
@@ -47,21 +51,32 @@ nav{
 
 .maskot{
   display: flex;
+  align-items: center; 
+  justify-content: center;
 }
 
 .maskot img{
   width: 48px;
   height: 48px;
   margin-right: 10px;
+    display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
-.logo{
+.logo a{
   width: 207px;
   height: 40px;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border: none;
+  text-decoration: none;
+  color: #698269;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
 .wrap-menu{
@@ -71,18 +86,24 @@ nav{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #000;
 }
 
-.menu1, .menu2, .menu3{
+.menu1 a, .menu2 a, .menu4 a{
   margin: 0px 16px;
+  text-decoration: none;
+  color: #000;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
-.menu4{
+.menu3 a{
   margin: 0px 16px;
   color: #698269;
-}
+  text-decoration: none;
 
+
+}
 .nav_right{
   display: flex;
   flex-direction: row;
@@ -96,6 +117,10 @@ nav{
   border-radius: 40px;
   background: #698269;
   border: none;
+}
+
+.nav_logout a{
+  text-decoration: none;
   color: #FFF;
   text-align: center;
   font-size: 20px;
@@ -111,7 +136,9 @@ nav{
 .nav_profile img{
   width: 40px;
   height: 40px;
-  align-items: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
 /* dropdown */
@@ -199,8 +226,8 @@ nav{
   
   .sidebar .listClass .ipsClass {
     width: 100%;
-    background-color: #fff;
-    color: #698269;
+    background-color: #698269;
+    color: #F1DBBF;
     border-radius: 40px 0px 40px 0px;
     padding: 4px 40px 4px 120px;
   }
@@ -239,6 +266,7 @@ nav{
     background-color: var(--color1);
     padding: 40px;
     border-radius: 40px 0px 40px 0px;
+    margin-bottom: 20px;
   }
   
   .containerQuiz .quizSoal {
@@ -292,14 +320,8 @@ nav{
   }
   
   .newQuiz button {
-    color: #FFF;
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     height: 40px;
-    margin: 20px 0px 40px 0px;
+    margin: 0px 0px 40px 0px;
     padding: 0px 40px;
     background-color: var(--color1);
     border-radius: 40px;
@@ -307,6 +329,16 @@ nav{
     justify-content: center;
     align-items: center;
     border: none;
+  }
+  
+  .newQuiz a{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
   }
   
   .rightLeft {
@@ -319,12 +351,17 @@ nav{
   padding: 40px 120px 20px 120px;
   background: #FFF;
   box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer a{
   color: #000;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-align: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
 .bottom-information{
@@ -381,6 +418,7 @@ nav{
 
 .bottom-copyright{
   font-size: 16px;
+  text-align: center;
 }
 /* end bottom section */
 
