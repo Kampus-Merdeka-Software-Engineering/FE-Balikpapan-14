@@ -141,7 +141,7 @@ nav{
     padding: 40px 120px;
 }
 
-.form-bottom{
+.form-bottom .form-content{
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
