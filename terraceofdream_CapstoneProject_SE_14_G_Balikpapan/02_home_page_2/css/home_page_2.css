@@ -365,6 +365,8 @@ margin: 20px;
 width: 164px;
 height: 176px;
 margin-bottom: 8px;
+object-fit: cover;
+object-position: center;
 }
 
 .main-form-green h3{
