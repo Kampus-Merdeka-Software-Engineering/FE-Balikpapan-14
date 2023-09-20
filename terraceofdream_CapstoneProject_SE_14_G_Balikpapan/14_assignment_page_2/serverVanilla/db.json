@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "question": "Tumbuhan",
+      "deadline": "2012-28-18",
+      "subject": "Apa aja deh",
+      "message": "Tumbuhan",
+      "linkFile": "link",
+      "forPersonal": "personal",
+      "id": 2
+    },
+    {
+      "question": "hadsig",
+      "deadline": "1020-99-14",
+      "subject": "Tumbuhan",
+      "message": "message",
+      "linkFile": "link lagi",
+      "forPersonal": "personal",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
