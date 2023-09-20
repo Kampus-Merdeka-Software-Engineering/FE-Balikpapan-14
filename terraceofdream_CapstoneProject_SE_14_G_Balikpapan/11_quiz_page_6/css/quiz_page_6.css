@@ -13,6 +13,128 @@ box-sizing: border-box;
 }
 /* end universal */
 
+/* <!-- source 2 --> */
+.justify-center{
+  background-color: var(--color1);
+    padding: 40px;
+    border-radius: 40px 0px 40px 0px;
+    margin-bottom: 80px
+}
+
+.justify-center h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.choice-container {
+  display: flex;
+  background-color: white;
+  font-size: 20px;
+    font-weight: 400;
+    border-radius: 40px;
+    padding: 0px;
+    width: 100%;
+    height: 40px;
+    text-align: start;
+    border: none;
+    margin-top: 8px;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 0.4rem 0 #0000007a;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+
+}
+
+.choice-text {
+  padding: 4px 16px;
+  width: 100%;
+}
+
+.correct {
+  background-color: #bce6bc;
+}
+
+.incorrect {
+  background-color: #F1DBBF;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hud-prefix-left {
+  text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hud-main-text {
+  text-align: right;
+  font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#hud-item{
+  width: 50%;
+}
+
+#progressBar {
+  width: 100%;
+  height: 20px;
+  border: 0.2rem solid #ffffff;
+    border-radius: 40px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 1px;
+}
+
+#progressBarFull {
+  height: 12px;
+  background-color: #ffffff;
+  width: 0%;
+  border-radius: 40px;
+}
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* <!-- end source 2 --> */
+
 /* body */
 body{
 width: 100%;
