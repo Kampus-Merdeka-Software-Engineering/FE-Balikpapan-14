@@ -7,7 +7,7 @@ const linkFile= document.getElementById('linkFile');
 const forPersonal= document.getElementById('forPersonal');
 const back= document.getElementById('back');
 const send= document.getElementById('send');
-const container= container.getElementById('container')
+const container= container.getElementById('container');
 
 const postData = (e) => {
     e.preventDefault()
@@ -16,19 +16,20 @@ const postData = (e) => {
         headers: {
             "Content-Type" : "application/json",
         },
-        body: JSON.stringify {{
-            const (question: question.value,
+        body: JSON.stringify ({
+            question: question.value,
             deadline: deadline.value,
             subject: subject.value,
             message: message.value,
             linkFile: linkFile.value,
-            forPersonal: forPersonal.value,)
-        }}
-    }).then( ()=> getData())
+            forPersonal: forPersonal.value
+        })
+    }).then((response) => console.log(response))
+    .catch((err) => console.log(err))
 }
 form.addEventListener('send', (e)=>postData (e))
 
-const getData= async() -> {
+const getData= async() => {
     const data = await fetch ('http://localhost:3000/posts'). then (res => res.json)
     console.log('data', data);
     data.map(item => 
