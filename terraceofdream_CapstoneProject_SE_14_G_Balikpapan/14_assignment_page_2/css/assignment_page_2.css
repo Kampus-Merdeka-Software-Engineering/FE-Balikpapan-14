@@ -220,6 +220,12 @@ input[type=text], [type=email]{
     margin-bottom: 10px;
 }
 
+.button-form button a {
+    text-decoration: none;
+    color: #698269;
+}
+
+
 @media (max-width: 1140px) {
     .menu1{
         display: none;

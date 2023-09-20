@@ -4,10 +4,10 @@ const deadline= document.getElementById('deadline');
 const subject= document.getElementById('subject');
 const message= document.getElementById('message');
 const linkFile= document.getElementById('linkFile');
-const forPersonal= document.getElementById('forPersonal');
+const forPersonal= document.getElementById('forPersonal')
 const back= document.getElementById('back');
 const send= document.getElementById('send');
-const container= container.getElementById('container');
+const container= document.getElementById('container');
 
 const postData = (e) => {
     e.preventDefault()
