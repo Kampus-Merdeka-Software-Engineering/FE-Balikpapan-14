@@ -36,9 +36,15 @@ nav{
     line-height: normal;
 }
 
+.maskot{
+    display: flex;
+    margin-right: 15px;
+}
+
 .logo{
     font-size: 24px;
     font-weight: 600;
+    margin-top: 5px;
 }
 
 .wrap-menu{
@@ -54,6 +60,7 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 .menu2{
@@ -64,6 +71,7 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 .menu3{
@@ -74,6 +82,7 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 .menu4{
@@ -84,6 +93,7 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 .nav_right{
@@ -99,13 +109,17 @@ nav{
     border-radius: 40px;
     background: #698269;
     border: none;
-    color: #FFF;
     text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal
+    line-height: normal;
 }
+
+.nav_logout button a {
+    text-decoration: none;
+    color: #FFF;
+} 
 
 .nav_profile img{
     width: 40px;

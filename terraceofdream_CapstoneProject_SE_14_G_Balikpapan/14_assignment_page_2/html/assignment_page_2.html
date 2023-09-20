@@ -16,35 +16,37 @@
 <body>
     <!--navigation bar-->
     <nav data-aos="fade-down">
-        <div class="nav-left">
-            <div class="maskot">
-                <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/maskot.png"></img>
-            </div>
             <div class="logo">
-                terraceofdream.
+                <div class="maskot">
+                    <a href="">  
+                        <img src="../../img/maskot.png" alt=" "  style="width: 48px; height: 48px;"/>
+                        </a>
+                <div class="logo"> terraceofdream.</div>
             </div>
         </div>
         <div class="wrap-menu">
-            <div class="menu1">Home</div>
-            <div class="menu2">Lessons</div>
-            <div class="menu3">Quiz</div>
-            <div class="menu4">Assignment</div>
+            <a href="#" class="menu1">Home</a>
+            <a href="#" class="menu2">Lessons</a>
+            <a href="#" class="menu2">Quiz</a>
+            <a href="#" class="menu2">Assignment</a>
         </div>
         <div class="nav_right">
             <div class="nav_logout">
-                <button>Logout</button>
+                <button><a href="#">Logout</a></button>
             </div>
             <div class="nav_profile">
-                <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/profile.jpg" alt="your profile">
+                <a href="">
+                    <img src="../../img/profile.jpg" alt="" class="profilImg" />
+                  </a>
             </div>
             <!-- dropdown -->
               <!-- <div class="dropdown" style="float:right;">
                 <button class="dropbtn"><img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/menu.jpg" alt="dropdown"></button>
                 <div class="dropdown-content">
-                  <a href="#">Home</a>
-                  <a href="#">Lessons</a>
-                  <a href="#">Quiz</a>
-                  <a href="#">Assignment</a>
+                  <a href="#" class="menu1">Home</a>
+                  <a href="#" class="menu2">Lessons</a>
+                  <a href="#" class="menu2">Quiz</a>
+                  <a href="#" class="menu2">Assignment</a>
                   <a href="#">Profile</a>
                   <a href="#">Logout</a>
                 </div>
@@ -60,17 +62,17 @@
             <form class="form">
                 <div class="form-content">
                     <label for="">Question</label><br>
-                    <input type="text" name="message" id="message" placeholder="Here is the Question" required>
+                    <input type="text" name="message" id="question" placeholder="Here is the Question" required>
                 </div>
 
                 <div class="form-content">
                     <label for="">Deadline</label><br>
-                    <input type="text" name="message" id="message" placeholder="Due Date Day/Month/Year" required>
+                    <input type="text" name="message" id="deadline" placeholder="Due Date Day/Month/Year" required>
                 </div>
 
                 <div class="form-content">
                     <label for="">Subject</label><br>
-                    <input type="text" name="message" id="message" placeholder="e.g. Subject_Name_Class" required>
+                    <input type="text" name="message" id="subject" placeholder="e.g. Subject_Name_Class" required>
                 </div>
 
                 <div class="form-content">
