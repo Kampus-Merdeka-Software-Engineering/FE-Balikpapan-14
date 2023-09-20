@@ -13,7 +13,7 @@
 }
 /* end universal */
 
-/* quiz */
+/* <!-- source 1 -->  */
 .panel {
   background-color: var(--color1);
   padding: 40px;
@@ -87,8 +87,7 @@
 	font-size: 30px;
 	color: darkslategray;
 }
-/* end quiz */
-
+/* <!-- ende source 1 --> */
 
 /* body */
 body{

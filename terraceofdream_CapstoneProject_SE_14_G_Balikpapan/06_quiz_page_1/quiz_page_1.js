@@ -1,3 +1,4 @@
+// source 1
 // Question
 const Questions = [{
 	q: "What is capital of India?",
@@ -94,3 +95,4 @@ function checkAns() {
 		nextQuestion();
 	}
 }
+// end source 1
