@@ -23,7 +23,6 @@ const postData = (e) => {
             subject: subject.value,
             message: message.value,
             linkFile: linkFile.value,
-            forPersonal: forPersonal.value
         })
     }).then((response) => console.log(response))
     .catch((err) => console.log(err))
