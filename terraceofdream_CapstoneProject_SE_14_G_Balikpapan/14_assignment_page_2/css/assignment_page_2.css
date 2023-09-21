@@ -52,6 +52,10 @@ nav{
     flex-wrap: wrap;
 }
 
+.wrap-menu a:hover {
+    color: #698269;
+    }
+
 .menu1{
     margin: 0px 16px;
     color: #000;

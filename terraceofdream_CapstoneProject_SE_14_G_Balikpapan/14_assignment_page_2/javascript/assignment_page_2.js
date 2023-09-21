@@ -25,6 +25,9 @@ const postData = (e) => {
             linkFile: linkFile.value,
         })
     }).then((response) => console.log(response))
+    .then(data => {
+        window.location.href= "../../05_lessons_page/html/lessons_page.html"
+    })
     .catch((err) => console.log(err))
 }
 
@@ -36,5 +39,8 @@ const getData= async() => {
     data.map(item => 
         {const assignment= document.createElement('p')
     assignment.innerText= item.title
-    container.appendChild(assignment)})
+    container.appendChild(assignment)
+})
 }
+
+getData()
