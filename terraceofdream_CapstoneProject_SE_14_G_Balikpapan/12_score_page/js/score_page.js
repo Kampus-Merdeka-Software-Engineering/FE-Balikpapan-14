@@ -2,6 +2,7 @@ const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
+const form = document.getElementById('formScore')
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
@@ -12,6 +13,26 @@ finalScore.innerText = mostRecentScore;
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
+
+form.addEventListener('submit', function(e){
+    // e.preventDefault()
+    // console.log(mostRecentScore);
+    // console.log(username.value);
+
+    const d = new Date();
+
+    fetch('http://localhost:3000/score', {
+        method: 'POST',
+        headers: {
+            "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+            id : d.getTime(),
+            nilai : mostRecentScore,
+            nama : username.value
+        })
+    })
+})
 
 saveHighScore = (e) => {
     e.preventDefault();

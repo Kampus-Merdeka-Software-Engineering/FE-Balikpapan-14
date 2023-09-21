@@ -11,7 +11,7 @@
 body{
   width: 100%;
   overflow-x: hidden;
-  background-color: #698269;
+  background: linear-gradient(90deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
 }
 /* end body */
 
@@ -46,7 +46,7 @@ nav{
 padding: 0px 120px;
 width: 100%;
 height: 80px;
-background-color: #FFF;
+background-color: rgba(255, 255, 255, 0.75);
 border-radius: 0px;
 display: flex;
 justify-content: space-between;
@@ -198,14 +198,13 @@ line-height: normal;
 }
 
 .hero-image img{
-  width: 366px;
-  height: 387px;
-  flex-shrink: 0;
+  object-fit: cover;
+object-position: center;
 }
 
 .hero-information h1{
   color: #698269;
-  font-size: 24px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -242,11 +241,16 @@ line-height: normal;
 /* end hero section*/
 
 /* leaderboard */
+.homeCenter{
+  background: rgb(105,130,105);
+  background: linear-gradient(90deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
+}
+
 .leaderboard{
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .congrats-to-our{
@@ -273,6 +277,8 @@ line-height: normal;
   padding: 40px;
   margin-right: 120px;
   margin-left: 120px;
+  box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.12);
+  
 }
 
 table{
@@ -310,10 +316,8 @@ line-height: normal;
 
 /* main section */
 .main-section{
-padding: 40px 0px 0px 0px;
 display: flex;
 flex-direction: column;
-background-color: #698269;
 text-align: center;
 }
 
@@ -365,22 +369,21 @@ justify-content: space-around;
 .main-form{
 border-radius: 80px 0px;
 background: #ffffff;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
 padding: 40px 20px;
 margin: 20px;
 }
 
 .main-form-green{
 border-radius: 80px 0px;
-background: #698269;
+background: rgb(105,130,105);
+background: linear-gradient(0deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 padding: 40px 20px;
 margin: 20px;
 }
 
 .main-form-green img, .main-form img{
-width: 164px;
-height: 176px;
 margin-bottom: 8px;
 object-fit: cover;
 object-position: center;
@@ -423,6 +426,7 @@ padding: 4px 20px;
 
 .main-form-green a{
   color: #698269;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12);
 }
 
 .main-center{
@@ -551,7 +555,7 @@ font-size: 16px;
 
 /* media */
 @media (max-width: 991px) {
-nav{
+  nav{
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -562,6 +566,10 @@ nav{
 
 .dropbtn {
     display: flex;
+}
+
+.hero-section{
+  flex-direction: column;
 }
 
 .leaderboard {
