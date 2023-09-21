@@ -119,12 +119,15 @@ footer {
     .nav-center{
         display: none;
     }
+    /* perubahan di klik disini  */
+
 }
 
 @media (max-width: 414px){
     body {
         padding: 2rem;
     }
+    /* perubahan  klik disini */
 
     footer{
         font-size: 8px;
