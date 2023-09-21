@@ -46,6 +46,29 @@
             </div>
 
         </div>
+        <div class="container">
+            <div id="end" class="flex-center flex-column">
+              <h1 id="finalScore"></h1>
+              <form>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="username"
+                />
+                <button
+                  type="submit"
+                  class="btn"
+                  id="saveScoreBtn"
+                  onclick="saveHighScore(event)"
+                  disabled
+                >
+                 save
+                </button>
+              </form>
+            </div>
+          </div>
+          <script src="../js/score_page.js"></script>
 
         <footer>
             <div class="text-center">
