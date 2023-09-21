@@ -16,40 +16,30 @@
 <body>
     <!--navigation bar-->
     <nav data-aos="fade-down">
-        <div class="nav-left">
-            <div class="maskot">
-                <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/maskot.png"></img>
-            </div>
             <div class="logo">
-                terraceofdream.
+                <div class="maskot">
+                    <a href="">  
+                        <img src="../../img/maskot.png" alt=" "  style="width: 48px; height: 48px;"/>
+                        </a>
+                <div class="logo"> terraceofdream.</div>
             </div>
         </div>
         <div class="wrap-menu">
-            <div class="menu1">Home</div>
-            <div class="menu2">Lessons</div>
-            <div class="menu3">Quiz</div>
-            <div class="menu4">Assignment</div>
+            <a href="../../02_home_page_2/html/home_page_2.html" class="menu1">Home</a>
+            <a href="../../05_lessons_page/html/lessons_page.html" class="menu2">Lessons</a>
+            <a href="../../06_quiz_page_1/html/quiz_page_1.html" class="menu2">Quiz</a>
+            <a href="../../13_assignment_page_1/html/assignment_page_1.html" class="menu2">Assignment</a>
         </div>
         <div class="nav_right">
             <div class="nav_logout">
-                <button>Logout</button>
+                <button><a href="../../04_login_page/html/login_page.html">Logout</a></button>
             </div>
             <div class="nav_profile">
-                <img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/profile.jpg" alt="your profile">
+                <a href="">
+                    <img src="../../img/profile.jpg" alt="" class="profilImg" />
+                  </a>
             </div>
-            <!-- dropdown -->
-              <div class="dropdown" style="float:right;">
-                <button class="dropbtn"><img src="/terraceofdream_CapstoneProject_SE_14_G_Balikpapan/img/menu.jpg" alt="dropdown"></button>
-                <div class="dropdown-content">
-                  <a href="#">Home</a>
-                  <a href="#">Lessons</a>
-                  <a href="#">Quiz</a>
-                  <a href="#">Assignment</a>
-                  <a href="#">Profile</a>
-                  <a href="#">Logout</a>
-                </div>
-              </div>
-              <!-- end dropdown -->
+            
         </div>
     </nav>
     <!--end navigation bar-->
@@ -60,17 +50,17 @@
             <form class="form">
                 <div class="form-content">
                     <label for="">Question</label><br>
-                    <input type="text" name="message" id="message" placeholder="Here is the Question" required>
+                    <input type="text" name="message" id="question" placeholder="Here is the Question" required>
                 </div>
 
                 <div class="form-content">
                     <label for="">Deadline</label><br>
-                    <input type="text" name="message" id="message" placeholder="Due Date Day/Month/Year" required>
+                    <input type="text" name="message" id="deadline" placeholder="Due Date Day/Month/Year" required>
                 </div>
 
                 <div class="form-content">
                     <label for="">Subject</label><br>
-                    <input type="text" name="message" id="message" placeholder="e.g. Subject_Name_Class" required>
+                    <input type="text" name="message" id="subject" placeholder="e.g. Subject_Name_Class" required>
                 </div>
 
                 <div class="form-content">
@@ -80,19 +70,20 @@
 
                 <div class="form-content">
                     <label for="">Link File</label><br>
-                    <input type="text" name="message" id="message" placeholder="e.g. https://drive.google.com/example" required>
+                    <input type="text" name="message" id="linkFile" placeholder="e.g. https://drive.google.com/example" required>
                 </div>
             
                 <div class="radio-button">
                     <div class="radio-left">
-                        <input type="radio" id="for-personal" name="for" value="personal" required>
+                        <input type="radio" id="forPersonal" name="for" value="personal" required>
                         <label for="personal">This assignment is my own work</label>
                     </div>
                 </div>
                 <div class="button-form">
-                    <button type="submit">Back</button>
-                    <button type="submit">Send</button>
+                    <button id="back" type="submit"><a href="../../13_assignment_page_1/html/assignment_page_1.html">Back</a></button>
+                    <button id="send" type="submit">Send</button>
                 </div>
+                <div id="container"></div>
             </form>
         </div>
     </div>
@@ -103,6 +94,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="../javascript/assignment_page_2.js"></script>
     <!--end aos animation-->
 </body>
 
