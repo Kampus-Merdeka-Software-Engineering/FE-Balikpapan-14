@@ -242,6 +242,10 @@ background: linear-gradient(0deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 10
     padding: 4px 20px;
 }
 
+.main-form a{
+    color: #FFF;
+}
+
 /* end main section */
 
 /* bottom section */
