@@ -1,30 +1,42 @@
-const email = document.getElementById('email')
-const password = document.getElementById('password')
-const forpersonal = document.getElementById('forpersonal')
+const form= document.getElementsByClassName('form')[0];
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const forpersonal = document.getElementById('forpersonal');
+const Login = document.getElementById('Login')
+const LoginWithGoogle = document.getElementById('LoginWithGoogle')
+const Register = document.getElementById('Register')
 
-console.log(email)
-console.log(password)
-console.log(forpersonal)
+console.log(form)
 
-FormData.addEventListener('Login', (e)=> {
+const postData = (e) => {
+  console.log(e);
   e.preventDefault()
-  let newTodo = []
-  if(InputDeviceInfo.value.length) {
-    newTodo = [todoData,
-      {
-          class:'',
-          title: '',
-          completed:''
-      }
-    ]
-  }
+  fetch('http://localhost:3000/Post', {
+      method: 'POST',
+      headers: {
+          "Content-Type" : "application/json",
+      },
+      body: JSON.stringify ({
+          email: email.value,
+          password: password.value,
+      })
+  }).then((response) => console.log(response))
+  .then(data => {
+      window.location.href= "../04_login_page/html/login_page.html"
+  })
+  .catch((err) => console.log(err))
 }
-)
-FormData.addEventListener('Login with Google')
-FormData.addEventListener('Register')
 
-.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+form.addEventListener('submit', (e)=> postdata(e))
+
+const getData= async() => {
+  const data = await fetch ('http://localhost:3000/Post'). then (res => res.json)
+  console.log('data', data);
+  data.map(item => 
+      {const assignment= document.createElement('p')
+  assignment.innerText= item.title
+  container.appendChild(assignment)
+})
+}
+
+getData()
