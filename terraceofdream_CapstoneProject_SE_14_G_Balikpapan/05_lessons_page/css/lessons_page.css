@@ -15,13 +15,22 @@ body{
 }
 /* end body */
 
+/* link */
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* end link */
+
 
 /* navbar */
 nav{
     padding: 0px 120px;
     width: 100%;
     height: 80px;
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,13 +59,14 @@ nav{
     margin-right: 10px;
 }
 
-.logo{
+.logo a{
     width: 207px;
     height: 40px;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: #698269;
 }
 
 .wrap-menu{
@@ -69,13 +79,15 @@ nav{
     color: #000;
 }
 
-.menu1, .menu3, .menu4{
+.menu1 a, .menu3 a, .menu4 a{
     margin: 0px 16px;
+    color: #000;
 }
 
-.menu2{
+.menu2 a {
     margin: 0px 16px;
     color: #698269;
+    font-weight: 600;
 }
 
 .nav_right{
@@ -97,6 +109,10 @@ nav{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.nav_logout button a {
+color: #FFF;
 }
 
 .nav_profile{
@@ -157,12 +173,13 @@ nav{
     padding: 120px;
     display: flex;
     flex-direction: column;
-    background-color: #698269;
+    background: rgb(105,130,105);
+background: linear-gradient(0deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
     text-align: center;
 }
 
 .main-top h2{
-    color: #F1DBBF;
+    color: #698269;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -171,7 +188,7 @@ nav{
 }
 
 .main-top h3{
-    color: #FFF;
+    color: #000000;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -238,6 +255,10 @@ nav{
     font-weight: 400;
     line-height: normal;
     text-align: center;
+}
+
+.footer a{
+    color: #000;
 }
 
 .bottom-information{
