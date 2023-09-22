@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <!--main section-->
     <div class="main-section">
         <div class="register-left">
             <div class="register-txt">
@@ -29,22 +28,22 @@
             <form class="form">
                 <div class="form-bottom">
                     <label for="">Username</label>
-                    <input type="text" name="message" id="message" placeholder="Enter Your Username" required>
+                    <input type="text" name="username" id="username" placeholder="Enter Your Username" required>
                 </div>
 
                 <div class="form-bottom">
                     <label for="">Email</label>
-                    <input type="email" name="message" id="message" placeholder="Enter Your Email" required>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
                 </div>
 
                 <div class="form-bottom">
                     <label for="">Password</label>
-                    <input type="password" name="message" id="message" placeholder="Enter Your Password" required>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
                 </div>
 
                 <div class="form-bottom">
                     <label for="">Confirm Password</label>
-                    <input type="password" name="message" id="message" placeholder="Enter Your Password" required>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter Your Password" required>
                 </div>
 
                 <div class="button-form">
@@ -53,9 +52,10 @@
                     <button type="submit">Login</button>
                 </div>
             </form>
+            <div id="resultContainer"></div>
         </div>
     </div>
-    <!--end main section-->
+    <script src="register.js"></script>
 </body>
 
 <footer>
