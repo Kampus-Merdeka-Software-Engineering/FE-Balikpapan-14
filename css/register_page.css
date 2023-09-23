@@ -1,0 +1,255 @@
+/* universal */
+*{
+  font-family: "poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* end universal */
+
+/* body */
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+/* end body */
+
+/* link */
+a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #698269;
+}
+/* end link */
+
+/* main section */
+.main-section{
+  margin: 120px;
+  border-radius: 40px 0px 40px 0px;
+  background: rgb(105,130,105);
+background: linear-gradient(0deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
+  box-shadow: 0px 0px 20px 0px rgba(105, 130, 105, 0.50);
+  display: flex;
+  flex-direction: row;
+}
+
+.register-left{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  border-radius: 40px 0px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+.register-txt{
+  margin-bottom: 20px;
+  color: #698269;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.register-img img{
+  width: 280px;
+  height: 300px;
+}
+
+.main-form{
+  width: 60%;
+  padding: 40px 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form h1{
+  color: #698269;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.form-bottom{
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input[type=text], [type=email], [type=password]{
+  min-width: 400px;
+  height: 40px;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.button-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-form p{
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px 0px;
+}
+
+.button-form button{
+  width: 300px;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  color: #698269;
+  font-size: 24px;
+  font-style: Bold;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* end main section */
+
+/* footer section */
+.footer{
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* end footer section */
+
+/* media */
+@media (max-width: 991px) {
+    .main-section{
+      margin: 8rem 4rem;
+      flex-direction: column;
+      min-width: auto;
+    }
+
+    .register-left{
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .register-txt{
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    .main-form{
+      width: 100%;
+    }
+
+    .form-bottom{
+      margin-bottom: 20px;
+      padding: 0px 20px;
+    }
+
+    label{
+      text-align: center;
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 8px;
+    }
+
+    input[type=text], [type=email], [type=password]{
+        margin: 0px;
+        min-width: auto;
+    }
+
+    .button-form{
+      margin-top: 24px;
+    }
+
+    .button-form button{
+      width: 200px;
+    }
+
+    .bottom-copyright{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 414px) {
+  .main-section{
+    margin: 8rem 2rem;
+    flex-direction: column;
+  }
+
+  .register-left{
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .register-txt{
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .register-img img{
+    width: 200px;
+    height: 220px;
+  }
+  
+  .main-form{
+    width: 100%;
+    padding: 40px 12px;
+  }
+
+  .main-form h1{
+    font-size: 24px;
+  }
+
+  .form-bottom{
+    margin-bottom: 12px;
+  }
+
+  label{
+    font-size: 16px;
+  }
+
+  input[type=text], [type=email]{
+      margin: 0px;
+  }
+
+  .footer{
+    font-size: 10px;
+  }
+}
+/* end media */
