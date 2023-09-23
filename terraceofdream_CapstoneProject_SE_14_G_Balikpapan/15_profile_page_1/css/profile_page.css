@@ -1,0 +1,243 @@
+:root {
+  --color1: #698269;
+  --bgcolor: #fff;
+  --fontcolor: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  /* height: 2000px; */
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px 0 120px;
+  background-color: #fff;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .navLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navLogo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color1);
+  margin-right: 10px;
+}
+
+.navbar .navLogo img {
+  width: fit-content;
+  height: 65px;
+}
+
+.navbar .navMenu a {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 10px;
+  color: #000;
+  display: inline-block;
+}
+
+.navbar .navMenu .menuQuiz {
+  color: var(--color1);
+}
+
+.navbar .navMenu a:hover {
+  color: var(--color1);
+}
+
+.navbar .navUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navUser .profilUser {
+  margin-right: 20px;
+  width: 160px;
+  height: 40px;
+  background-color: var(--color1);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.navUser .profilImg {
+  width: 40px;
+  height: 40px;
+}
+
+/* main section */
+.mainProfil {
+  min-height: 100vh;
+  padding: 118px 70px 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #698269;
+}
+
+.mainProfil .myProfil {
+  color: #fff;
+  text-align: center;
+}
+
+.myProfil h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.myProfil h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profilSection {
+  width: 100%;
+  background-color: #fff;
+  padding: 60px;
+  margin: 30px 0;
+  border-radius: 40px 0;
+}
+
+.profilSection .name,
+.profilSection .nis,
+.profilSection .birthDate,
+.profilSection .email {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+}
+
+.name label,
+.nis label,
+.birthDate label,
+.email label {
+  font-size: 24px;
+  font-weight: 700;
+  color: #698269;
+  width: 20%;
+  background-color: #fff;
+}
+
+.name input,
+.nis input,
+.birthDate input,
+.email input {
+  width: 80%;
+  background-color: #698269;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0 40px;
+}
+
+.btnSubmit {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.btnSubmit button {
+  width: 150px;
+  height: 100%;
+  background-color: #698269;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+Footer .footer {
+  padding: 40px 120px 20px 120px;
+  background: #fff;
+  box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.bottom-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bottom-head {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.call {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.call img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.loc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.loc img {
+  width: 25px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.socmed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socmed img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.bottom-copyright {
+  font-size: 16px;
+}
