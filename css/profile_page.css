@@ -18,87 +18,186 @@ body {
   /* height: 2000px; */
 }
 
-/* navbar */
-.navbar {
+/* link */
+a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end link */
+
+/* navigation bar */
+nav{
+  padding: 0px 120px;
   width: 100%;
   height: 80px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px 0 120px;
-  background-color: #fff;
-  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  color: #698269;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.navbar .navLogo {
+/* navigation bar left */
+.nav-left{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
 }
 
-.navbar .navLogo a {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--color1);
+.maskot{
+  display: flex;
+}
+
+.maskot img{
+  width: 48px;
+  height: 48px;
   margin-right: 10px;
 }
 
-.navbar .navLogo img {
-  width: fit-content;
-  height: 65px;
+.logo a{
+  width: 207px;
+  height: 40px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #698269;
+}
+/* end navigation bar left */
+
+/* navigation bar center */
+.wrap-menu{
+  display: flex;
 }
 
-.navbar .navMenu a {
+.wrap-menu a{
+  text-align: center;
   font-size: 20px;
+  font-style: normal;
   font-weight: 400;
-  margin: 0 10px;
+  line-height: normal;
   color: #000;
+}
+
+.wrap-menu a:hover{
+  color: #698269;
+  font-weight: 600;
+  text-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.010);
+  transform: translateY(-0.4rem);
+}
+
+.menu2 a, .menu3 a, .menu4 a, .menu1 a{
+  margin: 0px 16px;
+}
+/* end navigation bar center */
+
+/* navigation bar right */
+.nav_right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav_logout button {
+  margin: 0px 16px;
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  background: #698269;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+button:hover{
+  transform: translateY(-0.4rem);
+  transition: transform 150ms;
+}
+
+.nav_logout a{
+  color: #FFF;
+}
+
+.nav_profile{
+  display: flex;
+}
+
+.nav_profile img{
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
+.nav_profile img:hover{
+  transform: translateY(-0.4rem);
+  transition: transform 150ms;
+}
+/* end navigation bar right */
+
+/* navigation bar dropdown */
+.dropdown {
+  position: relative;
   display: inline-block;
 }
 
-.navbar .navMenu .menuQuiz {
-  color: var(--color1);
+.dropbtn {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 
-.navbar .navMenu a:hover {
-  color: var(--color1);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 40px 0px;
+  background: #FFF;
 }
 
-.navbar .navUser {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.dropdown-content a {
+  padding: 20px 40px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.navUser .profilUser {
-  margin-right: 20px;
-  width: 160px;
-  height: 40px;
-  background-color: var(--color1);
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-  border-radius: 40px;
-}
+.dropdown-content a:hover {background-color: #698269; border-radius: 40px 0px; color: #F1DBBF;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #ffffff;}
+/* navigation bar dropdown */
 
-.navUser .profilImg {
-  width: 40px;
-  height: 40px;
-}
+/* end navigation bar */
 
 /* main section */
 .mainProfil {
-  min-height: 100vh;
-  padding: 118px 70px 0 120px;
+  padding: 120px 70px 40px 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #698269;
+  background: rgb(105,130,105);
+  background: linear-gradient(0deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
 }
 
 .mainProfil .myProfil {
@@ -110,11 +209,13 @@ body {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
+  color: #000;
 }
 
 .myProfil h1 {
   font-size: 24px;
   font-weight: 700;
+  color: #698269;
 }
 
 .profilSection {
@@ -175,9 +276,14 @@ body {
   font-weight: 400;
 }
 
-Footer .footer {
+/* footer section */
+footer a{
+  color: #000;
+}
+
+.footer{
   padding: 40px 120px 20px 120px;
-  background: #fff;
+  background: #FFF;
   box-shadow: 0px 8px 28px 0px rgba(0, 0, 0, 0.25);
   color: #000;
   font-size: 18px;
@@ -187,32 +293,85 @@ Footer .footer {
   text-align: center;
 }
 
-.bottom-information {
+/* footer keywords */
+.bottom-information1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.bottom-head {
+.bottom-information1 h1{
+  display: flex;
+  flex-direction: column;
+  color: #698269;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+}
+
+.bottom-information1 p{
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+/* end footer keywords */
+
+hr{
+  width: 100%;
+  border-color: rgba(0,0,0,var(--tw-border-opacity));
+  --tw-border-opacity: .1;
+}
+
+/* footer contact */
+.bottom-information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.bottom-head{
   margin-bottom: 20px;
   font-weight: bold;
 }
 
-.call {
+.socmed{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.call img {
+.socmed img{
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+}
+
+.call{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.call img{
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
 
-.loc {
+.loc{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -220,24 +379,130 @@ Footer .footer {
   text-align: center;
 }
 
-.loc img {
+.loc img{
   width: 25px;
   height: 30px;
   margin-right: 10px;
 }
+/* end footer contact */
 
-.socmed {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.socmed img {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.bottom-copyright {
+/* footer copyrights */
+.bottom-copyright{
   font-size: 16px;
+}
+/* end footer copyrights */
+/* end footer section */
+
+/* media ipad */
+@media (max-width: 991px) {
+  /* ipad navigation bar */
+  nav{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .menu1, .menu2, .menu3, .menu4, .nav_profile, .nav_logout{
+    display: none;
+  }
+
+  .dropbtn {
+    display: flex;
+  }
+  /* end ipad navigation bar */
+
+  .name label, .nis label, .birthDate label, .email label {
+  
+    width: 100%;
+
+}
+
+  .name, .nis, .birthDate, .email{
+    flex-direction: column;
+  }
+
+  .name input, .nis input, .birthDate input, .email input {
+    width: 100%;
+}
+
+  /* ipad footer section */
+  .call, .loc{
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .call img, .loc img{
+    margin-bottom: 10px;
+  }
+
+  .bottom-copyright{
+    font-size: 16px;
+  }
+  /* end ipad footer section */
+}
+
+/* media iphone */
+@media (max-width: 414px) {
+  /* iphone navigation bar */
+  .dropbtn img{
+    width: 40px;
+    height: 30px;
+  }
+  /* end iphone navigation bar */
+
+  
+.mainProfil{
+  padding: 120px 2rem 40px 2rem;
+}
+
+.profilSection{
+  padding: 40px;
+}
+
+  /* iphone footer section */
+  .footer{
+    padding: 40px 20px;
+  }
+
+  .bottom-information1 h1{
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .bottom-information1 p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .bottom-head{
+    font-size: 12px;
+  }
+
+  .socmed{
+    flex-direction: row;
+  }
+
+  .call, .loc{
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .call img, .socmed img{
+    width: 24px;
+    height: 24px;
+  }
+
+  .loc img{
+    width: 20px;
+    height: 24px;
+  }
+
+  .call p, .loc p{
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+  .bottom-copyright{
+    font-size: 10px;
+  }
+  /* iphone footer section */
 }

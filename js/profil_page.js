@@ -24,7 +24,7 @@ const postData = (e) => {
     })
   }).then((response) => console.log(response))
     .then(data => {
-      window.location.href = "../html/profil_page_2.html"
+      window.location.href = "/html/profil_page_2.html"
     })
     .catch((err) => console.log(err))
 }

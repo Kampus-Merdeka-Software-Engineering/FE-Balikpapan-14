@@ -767,6 +767,11 @@ hr{
     padding: 40px;
   }
 
+  .top-title{
+    flex-direction: column;
+    padding-right: 0px;
+  }
+
   .main-form{
     padding: 40px 20px;
   }
