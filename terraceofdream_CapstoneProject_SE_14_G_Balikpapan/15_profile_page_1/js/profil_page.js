@@ -1,29 +1,44 @@
-const profilForm = document.getElementById("formProfil");
+const form = document.getElementById("form")[0];
 const inputName = document.getElementById("inputName");
 const inputNis = document.getElementById("inputNis");
 const inputBirthdate = document.getElementById("inputBirthdate");
 const inputEmail = document.getElementById("inputEmail");
+const btnSubmit = document.getElementById('buttonSubmit')
+const container = document.getElementById('container')
+
+console.log(form);
 
 const postData = (e) => {
-  fetch("URL_SERVER/profile", {
+  console.log(e);
+  e.preventDefault()
+  fetch("http://localhost:3000/posts", {
     method: "POST",
     headers: {
-      Content_Type: "application/json",
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify({
+    body: JSON.stringify ({
       inputName: inputName.value,
       inputNis: inputNis.value,
       inputBirthdate: inputBirthdate.value,
-      inputEmail: inputBirthdate.value,
-    }),
-  });
-};
+      inputEmail: inputEmail.value,
+    })
+  }).then((response) => console.log(response))
+    .then(data => {
+      window.location.href = "../html/profil_page_2.html"
+    })
+    .catch((err) => console.log(err))
+}
 
-profilForm.addEventListener("submit", (e) => postData(e));
+form.addEventListener("submit", (e) => postData(e))
 
 const getData = async () => {
-  const data = await fetch("URL_SERVER/profil").then((res) => res.json());
-  console.log("data", data);
-};
+  const data = await fetch("http://localhost:3000/posts").then(res => res.json)
+  console.log("data", data)
+  data.map(item => {
+    const biodata = document.createElement("p")
+    biodata.innerText = item.title
+    container.appendChild(biodata)
+  })
+}
 
-getData();
+getData()
