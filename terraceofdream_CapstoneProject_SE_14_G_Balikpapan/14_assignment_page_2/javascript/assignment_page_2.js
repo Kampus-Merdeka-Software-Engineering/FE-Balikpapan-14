@@ -36,8 +36,8 @@ form.addEventListener('submit', (e) => postData(e));
 const getData= async() => {
     const data = await fetch ('http://localhost:3000/posts'). then (res => res.json)
     console.log('data', data);
-    data.map(item => 
-        {const assignment= document.createElement('p')
+    data.map(item => {
+    const assignment= document.createElement('p')
     assignment.innerText= item.title
     container.appendChild(assignment)
 })
