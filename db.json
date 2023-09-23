@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "question": "Tumbuhan",
+      "deadline": "09-08-2023",
+      "subject": "Tumbuhan_Risma_Balikpapan",
+      "message": "message",
+      "linkFile": "https://drive.google.com/file/d/1iutYmRHW_lRaXQJnZyrJruwfCpAnNku_/view?usp=drive_link",
+      "id": 2
+    },
+    {
+      "question": "Apa aja deh",
+      "deadline": "Tumbuhan",
+      "subject": "Apa aja deh",
+      "message": "Apa aja deh",
+      "linkFile": "serba serbi",
+      "id": 3
+    },
+    {
+      "question": "tiga",
+      "deadline": "3",
+      "subject": "tiga",
+      "message": "tiga",
+      "linkFile": "tiga",
+      "id": 4
+    },
+    {
+      "question": "empat",
+      "deadline": "4",
+      "subject": "empat",
+      "message": "empat",
+      "linkFile": "empat",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
