@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "assignment": "assignment.value",
+      "question": "question.value",
+      "deadline": "deadline.value",
+      "subject": "subject.value",
+      "answer": "answer.value",
+      "linkFile": "linkFile.value",
+      "forPersonal": "forPersonal.value"
+  }
+]
+}
