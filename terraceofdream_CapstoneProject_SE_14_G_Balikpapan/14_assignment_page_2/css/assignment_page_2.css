@@ -177,7 +177,7 @@ label{
     line-height: normal;
 }
 
-input[type=text], [type=email]{
+input[type=text], [type=email], [type=date], [type=url]{
     width: 100%;
     height: 40px;
     padding: 12px 20px;

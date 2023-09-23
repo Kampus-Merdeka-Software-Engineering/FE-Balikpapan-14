@@ -26,7 +26,7 @@ const postData = (e) => {
         })
     }).then((response) => console.log(response))
     .then(data => {
-        window.location.href= "../../05_lessons_page/html/lessons_page.html"
+        window.location.href= "../../13_assignment_page_1/html/assignment_page_1.html"
     })
     .catch((err) => console.log(err))
 }

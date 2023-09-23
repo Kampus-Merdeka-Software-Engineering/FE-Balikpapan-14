@@ -81,13 +81,21 @@ nav{
     color: #000;
 }
 
+.wrap-menu a:hover {
+    color: #698269;
+    }
+
 .menu1 a, .menu2 a, .menu3 a{
     margin: 0px 16px;
+    text-decoration: none;
+    color: #000;
 }
 
 .menu4 a{
     margin: 0px 16px;
     color: #698269;
+    text-decoration: none;
+    color: #000;
 }
 
 .nav_right{
