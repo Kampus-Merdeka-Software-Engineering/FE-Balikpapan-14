@@ -4,7 +4,7 @@ const deadline= document.getElementById('deadline');
 const subject= document.getElementById('subject');
 const message= document.getElementById('message');
 const linkFile= document.getElementById('linkFile');
-const forPersonal= document.getElementById('forPersonal')
+const forPersonal= document.getElementById('forPersonal');
 const back= document.getElementById('back');
 const send= document.getElementById('send');
 const container= document.getElementById('container');
@@ -26,7 +26,7 @@ const postData = (e) => {
         })
     }).then((response) => console.log(response))
     .then(data => {
-        window.location.href= "/html/assignment_page_1.html"
+        window.location.href= "../html/assignment_page_1.html"
     })
     .catch((err) => console.log(err))
 }
