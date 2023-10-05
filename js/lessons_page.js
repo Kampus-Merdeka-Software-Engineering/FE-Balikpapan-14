@@ -14,13 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const lessons = data.data;
 
         let html = "<table>"
-            html += "<tr><th>img</th><th>nama</th></tr>"
+            html += "<tr><th>img</th><th>mapel</th><th>module</th></tr>"
 
             lessons.forEach(lessons => {
                 html +=
                 `<tr>
-                    <td>${lessons.img}</td>
-                    <td>${lessons.nama}</td>
+                    <td>${lessons.image}</td>
+                    <td>${lessons.nama_mapel}</td>
+                    <td>${lessons.module}</td>
                 </tr>`
             })
 
