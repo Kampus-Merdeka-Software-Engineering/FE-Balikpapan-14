@@ -1,7 +1,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const userDataContainer = document.getElementById("userData")
 
-    const apiUrl = 'http://localhost:4000/profile'
+    const apiUrl = 'http://localhost:4000/assignment1'
     fetch(apiUrl).then(
         response => {
             if (!response.ok) {
@@ -11,18 +11,19 @@
         }
     ).then (data => {
         console.log(data)
-        const profile = data.data;
+        const assignment1 = data.data;
 
         let html = "<table>"
-            html += "<tr><th>Full Name</th><th>NISN</th><th>Birth Date</th><th>Email</th></tr>"
+            html += "<tr><th>Assignment</th><th>Deadline</th><th>Date Modified</th><th>Grade</th><th>Status</th></tr>"
 
-            profile.forEach(profile => {
+            assignment1.forEach(assignment1 => {
                 html +=
                 `<tr>
-                    <td>${profile.full_name}</td>
-                    <td>${profile. nisn}</td>
-                    <td>${profile.birthdate}</td>
-                    <td>${profile. email}</td>
+                    <td>${assignment1.assignment}</td>
+                    <td>${assignment1.deadline}</td>
+                    <td>${assignment1.date_modified}</td>
+                    <td>${assignment1.grade}</td>
+                    <td>${assignment1.status}</td>
                 </tr>`
             })
 
