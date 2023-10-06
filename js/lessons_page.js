@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             lessons.forEach(lessons => {
                 html +=
-                `<div class="main-form"><img src="${lessons.image}"></img>
+                `<div class="main-form" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"><img src="${lessons.image}"></img>
                 <h3>${lessons.nama_mapel}</h3>
                 <button type="submit"><a href="${lessons.module}" download="">Download</a></button>
                 </div>
