@@ -144,6 +144,12 @@ button:hover{
   align-items: center;
 }
 
+.medal_js{
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
 .nav_profile img:hover{
   transform: translateY(-0.4rem);
   transition: transform 150ms;
