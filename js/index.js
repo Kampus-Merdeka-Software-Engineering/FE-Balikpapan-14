@@ -35,7 +35,7 @@
         const mahasiswa = data.data;
 
         let html = "<table>"
-            html += "<tr><th>NO</th><th>Name</th><th>Score</th></tr>"
+            html += "<tr><th>Rank</th><th>Username</th><th>Score</th></tr>"
 
             mahasiswa.forEach(mahasiswa => {
                 html +=
