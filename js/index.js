@@ -40,7 +40,7 @@
             mahasiswa.forEach(mahasiswa => {
                 html +=
                 `<tr>
-                    <td>${mahasiswa.id}</td>
+                    <td>${mahasiswa.medal}</td>
                     <td>${mahasiswa.nama}</td>
                     <td>${mahasiswa.nilai}</td>
                 </tr>`
