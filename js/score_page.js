@@ -21,7 +21,7 @@ form.addEventListener('submit', function(e){
 
     const d = new Date();
 
-    fetch('http://localhost:3000/score', {
+    fetch('http://localhost:4000/score', {
         method: 'POST',
         headers: {
             "Content-Type" : "application/json"
