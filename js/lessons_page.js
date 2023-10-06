@@ -13,19 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(data)
         const lessons = data.data;
 
-        let html = "<table>"
-            html += "<tr><th>img</th><th>mapel</th><th>module</th></tr>"
+        let html = `<div class="main-box">`
 
             lessons.forEach(lessons => {
                 html +=
-                `<tr>
-                    <td>${lessons.image}</td>
-                    <td>${lessons.nama_mapel}</td>
-                    <td>${lessons.module}</td>
-                </tr>`
+                `<div class="main-form"><img src="${lessons.image}"></img>
+                <h3>${lessons.nama_mapel}</h3>
+                <button type="submit"><a href="${lessons.module}" download="">Download</a></button>
+                </div>
+                `
             })
 
-            html += "</table>"
+            html += `</div>`
 
             userDataContainer.innerHTML = html
     })

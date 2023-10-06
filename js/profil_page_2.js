@@ -13,20 +13,32 @@
         console.log(data)
         const profile = data.data;
 
-        let html = "<table>"
-            html += "<tr><th>Full Name</th><th>NISN</th><th>Birth Date</th><th>Email</th></tr>"
+        let html = "<section>"
 
             profile.forEach(profile => {
                 html +=
-                `<tr>
-                    <td>${profile.full_name}</td>
-                    <td>${profile. nisn}</td>
-                    <td>${profile.birthdate}</td>
-                    <td>${profile. email}</td>
-                </tr>`
+                `
+                <div class="name">
+          <p class="parName">Full Name</p>
+          <span class="spanName">${profile.full_name}</span>
+          </div>
+                <div class="nis">
+          <p class="parNis">NISN</p>
+          <span class="spanNis">${profile.nisn}</span>
+        </div>
+                
+        <div class="birthDate">
+          <p class="parBirthdate">Birth Date</p>
+          <span class="spanBirthdate">${profile.birthdate}</span>
+        </div>
+                    
+        <div class="email">
+          <p class="parEmail">Email</p>
+          <span class="spanEmail">${profile. email}</span>
+        </div>`
             })
 
-            html += "</table>"
+            html += "</section>"
 
             userDataContainer.innerHTML = html
     })
