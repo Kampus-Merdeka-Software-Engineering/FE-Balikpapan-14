@@ -18,12 +18,12 @@
 
             assignment1.forEach(assignment1 => {
                 html +=
-                `<tr>
+                `<tr class="table_line3">
                     <td>${assignment1.assignment}</td>
                     <td>${assignment1.deadline}</td>
                     <td>${assignment1.date_modified}</td>
                     <td>${assignment1.grade}</td>
-                    <td>${assignment1.status}</td>
+                    <td><button><a href="../html/assignment_page_2.html">${assignment1.status}</a></button></td>
                 </tr>`
             })
 
