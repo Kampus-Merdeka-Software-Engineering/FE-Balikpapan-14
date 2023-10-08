@@ -22,7 +22,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const userDataContainer = document.getElementById("userData")
 
-    const apiUrl = 'https://be-balikpapan-14-production-2263.up.railway.app/'
+    const apiUrl = 'https://be-balikpapan-14-production-2263.up.railway.app/leaderboard'
     fetch(apiUrl).then(
         response => {
             if (!response.ok) {
