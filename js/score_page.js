@@ -21,7 +21,7 @@ form.addEventListener('submit', function(e){
 
     const d = new Date();
 
-    fetch('http://localhost:4000/score', {
+    fetch('https://be-balikpapan-14-production-2263.up.railway.app/score', {
         method: 'POST',
         headers: {
             "Content-Type" : "application/json"

@@ -21,7 +21,7 @@ registerForm.addEventListener('submit', function (e) {
 
 const postData = async (e) => {
     e.preventDefault();
-    const response = await fetch('URL_SERVER/register', {
+    const response = await fetch('https://be-balikpapan-14-production-2263.up.railway.app/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

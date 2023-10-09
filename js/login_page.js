@@ -11,7 +11,7 @@ console.log(form)
 const postData = (e) => {
   console.log(e);
   e.preventDefault()
-  fetch('http://localhost:3000/Post', {
+  fetch('https://be-balikpapan-14-production-2263.up.railway.app/login', {
       method: 'POST',
       headers: {
           "Content-Type" : "application/json",

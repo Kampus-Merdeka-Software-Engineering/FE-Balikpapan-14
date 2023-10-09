@@ -1,7 +1,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const userDataContainer = document.getElementById("userData")
 
-    const apiUrl = 'http://localhost:4000/profile'
+    const apiUrl = 'https://be-balikpapan-14-production-2263.up.railway.app/profile'
     fetch(apiUrl).then(
         response => {
             if (!response.ok) {
