@@ -233,6 +233,19 @@ input[type=text], [type=email], [type=date], [type=url]{
     box-sizing: border-box;
     border-radius: 40px;
     color: #000000;
+    
+}
+
+.form-content p {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 13px 0px;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 40px;
+  color: #000000;
+  background-color: #FFF;
 }
 
 .radio-button{
