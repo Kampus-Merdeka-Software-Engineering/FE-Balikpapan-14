@@ -13,86 +13,9 @@
 }
 /* end universal */
 
-/* <!-- source 1 -->  */
-/* .panel {
-  background-color: var(--color1);
-  padding: 40px;
-  border-radius: 40px 0px 40px 0px;
-  margin-bottom: 20px;
-}
-
-.question {
-  background-color: #FFF;
-  font-size: 20px;
-  font-weight: 400;
-  border-radius: 40px;
-  padding: 0 12px;
-  width: 100%;
-  height: auto;
-  text-align: start;
-  border: none;
-  padding: 8px 28px;
-  margin-bottom: 20px;
-  width: 100%;
-  color: #698269;
-}
-
-.class-label{
-    width: 100%;
-    height: auto;
-    margin-top: 8px;
-    width: 100%;
-    display: flex;
-}
-
-.options label {
-  background-color: #FFF;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 400;
-  border-radius: 40px;
-  height: auto;
-  border: none;
-  padding: 8px 28px;
-  width: 100%;
-  margin-left: 10px;
-}
-
-.clasBtn{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.clasBtn button {
-	margin-top: 20px;
-	color: #698269;
-	cursor: pointer;
-  height: 40px;
-    padding: 0px 28px;
-    background-color: #FFF;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-#score {
-	font-size: 30px;
-	color: darkslategray;
-} */
-/* <!-- ende source 1 --> */
-
-/* <!-- source 2 --> */
 .justify-center{
-  background: rgb(105,130,105);
-background: linear-gradient(90deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
+  background: rgb(69,94,69);
+  background: linear-gradient(270deg, rgba(69,94,69,1) 0%, rgba(105,130,105,1) 100%);
     padding: 40px;
     border-radius: 40px 0px 40px 0px;
     margin-bottom: 80px
@@ -190,16 +113,6 @@ background: linear-gradient(90deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 1
   background-color: #ffffff;
   width: 0%;
   border-radius: 40px;
-}
-
-/* LOADER */
-#loader {
-  border: 1.6rem solid white;
-  border-radius: 50%;
-  border-top: 1.6rem solid #56a5eb;
-  width: 12rem;
-  height: 12rem;
-  animation: spin 2s linear infinite;
 }
 
 @keyframes spin {

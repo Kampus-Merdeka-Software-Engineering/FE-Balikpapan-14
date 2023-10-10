@@ -200,8 +200,8 @@ a{
 
 .main-form{
     border-radius: 40px 0px;
-    background: rgb(105,130,105);
-  background: linear-gradient(0deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
+    background: rgb(69,94,69);
+    background: linear-gradient(0deg, rgba(69,94,69,1) 0%, rgba(105,130,105,1) 100%);
     padding: 40px 120px;
 }
 

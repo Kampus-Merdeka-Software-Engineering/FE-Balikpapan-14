@@ -405,12 +405,17 @@ table{
 
 .main-form-green{
   border-radius: 80px 0px;
-  background: rgb(105,130,105);
-  background: linear-gradient(0deg, rgba(105,130,105,1) 0%, rgba(212,226,212,1) 100%);
+  background: rgb(69,94,69);
+  background: linear-gradient(0deg, rgba(69,94,69,1) 0%, rgba(105,130,105,1) 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 40px 20px;
   margin: 20px;
   width: 300px;
+}
+
+.main-form-green a:hover{
+  text-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.010);
+  transform: scale(1.07);
 }
 
 .main-form-green img, .main-form img{
