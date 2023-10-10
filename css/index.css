@@ -740,17 +740,19 @@ hr{
   }
 
   .hero-information h1 {
-    font-size: 20px;
+    font-size: 36px;
     margin-bottom: 8px;
+    font-weight: 800;
   }
 
   .hero-information p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 8px;
+    text-align: center;
   }
 
   .hero-section button {
-    font-size: 20px;
+    font-size: 16px;
     width: 200px;
     margin: 16px 0px 0px 0px;
   }
@@ -758,7 +760,14 @@ hr{
 
   /* iphone leaderboard */
   .congrats-to-our {
+    font-size: 14px;
     margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .title{
+    font-size: 26px;
+    font-weight: 700;
   }
 
   .table-container {
@@ -766,6 +775,14 @@ hr{
     margin-right: 2rem;
     margin-left: 2rem;
     margin-bottom: 20px;
+  }
+
+  .tabel th{
+    font-size: 18px;
+  }
+
+  .tabel td{
+    font-size: 14px;
   }
   /* iphone leaderboard */
 
@@ -777,6 +794,16 @@ hr{
   .top-title{
     flex-direction: column;
     padding-right: 0px;
+  }
+
+  .top-title h3{
+    font-size: 14px;
+    margin-right: 0px;
+  }
+
+  .top-title p{
+    font-size: 26px;
+    font-weight: 700;
   }
 
   .main-form{
