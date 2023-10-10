@@ -672,6 +672,10 @@ hr{
   .hero-information{
     text-align:center;
   }
+
+  .hero-information p{
+    text-align:center;
+  }
   /* end ipad hero section */
 
   /* ipad leaderboard */
