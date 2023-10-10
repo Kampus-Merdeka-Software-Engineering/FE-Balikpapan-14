@@ -1,10 +1,9 @@
 const form= document.getElementsByClassName('form')[0];
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const forpersonal = document.getElementById('forpersonal');
 const Login = document.getElementById('Login')
-const LoginWithGoogle = document.getElementById('LoginWithGoogle')
-const Register = document.getElementById('Register')
+// const LoginWithGoogle = document.getElementById('LoginWithGoogle')
+// const Register = document.getElementById('Register')
 
 console.log(form)
 
@@ -29,14 +28,14 @@ const postData = (e) => {
 
 form.addEventListener('submit', (e)=> postdata(e))
 
-const getData= async() => {
-  const data = await fetch ('http://localhost:3000/Post'). then (res => res.json)
-  console.log('data', data);
-  data.map(item => 
-      {const assignment= document.createElement('p')
-  assignment.innerText= item.title
-  container.appendChild(assignment)
-})
-}
+// const getData= async() => {
+//   const data = await fetch ('http://localhost:3000/Post'). then (res => res.json)
+//   console.log('data', data);
+//   data.map(item => 
+//       {const assignment= document.createElement('p')
+//   assignment.innerText= item.title
+//   container.appendChild(assignment)
+// })
+// }
 
 getData()
