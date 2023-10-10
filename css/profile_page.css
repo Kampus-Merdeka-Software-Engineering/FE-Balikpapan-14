@@ -266,6 +266,10 @@ button:hover{
   justify-content: end;
 }
 
+.btnSubmit a{
+  color: #FFF;
+}
+
 .btnSubmit button {
   width: 150px;
   height: 100%;
